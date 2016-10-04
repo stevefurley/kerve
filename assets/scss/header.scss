@@ -66,7 +66,7 @@
         @extend .pal-roman;
         font-size: 1.9rem;
         font-size: 1.9rem;
-        @include breakpoint(m) {
+        @include breakpoint(l) {
           font-size: 1.9rem;
           font-size: 1.3rem;
         }
