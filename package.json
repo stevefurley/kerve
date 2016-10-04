@@ -10,10 +10,7 @@
     "grunt-contrib-clean": "",
     "grunt-contrib-concat": "",
     "grunt-contrib-connect": "",
-    "grunt-contrib-copy": "",
     "grunt-contrib-sass": "",
-    "grunt-contrib-uglify": "",
-    "grunt-contrib-watch": "",
-    "grunt-include-replace": ""
+    "grunt-contrib-watch": ""
   }
 }
