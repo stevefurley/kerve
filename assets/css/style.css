@@ -1,0 +1,1285 @@
+@import url(../fonts/MyFontsWebfontsKit.css);
+/* ------------------------------------------
+---------- Fonts and the most basic styling--
+------------------------------------------ */
+.swiss, .product .slash, .events-grid .post-date .slash {
+  font-family: Swiss721BT-Thin;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pal-light, h1,
+h2,
+h3,
+h4, #banner .inner-title h2, .header-title,
+.footer-title, .events-grid h3 {
+  font-family: PalatinoLT-Light;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pal-roman, p, #header .header-logo, #menu ul li a, #footer .contact-link, #top-section h2, #top-section .big-description, .events-grid .post-date {
+  font-family: PalatinoLT-Roman;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.av-heavy, a.button span {
+  font-family: AvenirLTStd-Heavy;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.av-med, .product, a.button, #bottom-section .main-events-header {
+  font-family: AvenirLTStd-Medium;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.av-book, #footer .copyright, #footer a.privacy,
+#footer a.terms, .events-grid p.description {
+  font-family: AvenirLTStd-Book;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 2.7rem;
+}
+
+/* ------------------------------------------
+---------- Grid System------
+------------------------------------------ */
+.clear:before, .clear:after {
+  content: " ";
+  display: table;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.row {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+@media only screen and (min-width: 750px) {
+  .row-m {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .row-m:before, .row-m:after {
+    content: "";
+    display: table;
+  }
+  .row-m:after {
+    clear: both;
+  }
+
+  .clear-m:before, .clear-m:after {
+    content: "";
+    display: table;
+  }
+
+  .clear-m:after {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .row-l {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .row-l:before, .row-l:after {
+    content: "";
+    display: table;
+  }
+  .row-l:after {
+    clear: both;
+  }
+
+  .clear-l:before, .clear-l:after {
+    content: "";
+    display: table;
+  }
+
+  .clear-l:after {
+    clear: both;
+  }
+}
+@media only screen and (min-width: 1460px) {
+  .row-xl {
+    position: relative;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .row-xl:before, .row-xl:after {
+    content: "";
+    display: table;
+  }
+  .row-xl:after {
+    clear: both;
+  }
+
+  .clear-xl:before, .clear-xl:after {
+    content: "";
+    display: table;
+  }
+
+  .clear-xl:after {
+    clear: both;
+  }
+}
+.container, .container-full {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (min-width: 750px) {
+  .container {
+    width: 730px;
+  }
+
+  .container-m, .container-full-m {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-m {
+    width: 730px;
+  }
+
+  .container-full-m {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .container {
+    width: 1200px;
+  }
+
+  .container-l, .container-full-l {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-l {
+    width: 1200px;
+  }
+
+  .container-full-l {
+    width: auto;
+  }
+}
+@media only screen and (min-width: 1460px) {
+  .container {
+    width: 1440px;
+  }
+
+  .container-xl, .container-full-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-xl {
+    width: 1440px;
+  }
+
+  .container-full-xl {
+    width: auto;
+  }
+}
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-1-2,
+.col-1-3,
+.col-2-3,
+.col-1-4,
+.col-3-4,
+.col-1-5,
+.col-2-5,
+.col-3-5,
+.col-4-5 {
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  float: left;
+}
+
+.col-1 {
+  width: 8.33333%;
+}
+
+.col-2 {
+  width: 16.66667%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33333%;
+}
+
+.col-5 {
+  width: 41.66667%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33333%;
+}
+
+.col-8 {
+  width: 66.66667%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33333%;
+}
+
+.col-11 {
+  width: 91.66667%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-1-2 {
+  width: 50%;
+}
+
+.col-1-3 {
+  width: 33.33333%;
+}
+
+.col-2-3 {
+  width: 66.66667%;
+}
+
+.col-1-4 {
+  width: 25%;
+}
+
+.col-3-4 {
+  width: 75%;
+}
+
+.col-1-5 {
+  width: 20%;
+}
+
+.col-2-5 {
+  width: 40%;
+}
+
+.col-3-5 {
+  width: 60%;
+}
+
+.col-4-5 {
+  width: 80%;
+}
+
+.col-full {
+  width: 100%;
+}
+
+@media only screen and (min-width: 750px) {
+  .col-1-m,
+  .col-2-m,
+  .col-3-m,
+  .col-4-m,
+  .col-5-m,
+  .col-6-m,
+  .col-7-m,
+  .col-8-m,
+  .col-9-m,
+  .col-10-m,
+  .col-11-m,
+  .col-12-m,
+  .col-1-2-m,
+  .col-1-3-m,
+  .col-2-3-m,
+  .col-1-4-m,
+  .col-3-4-m,
+  .col-1-5-m,
+  .col-2-5-m,
+  .col-3-5-m,
+  .col-4-5-m {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+  }
+
+  .col-1-m {
+    width: 8.33333%;
+  }
+
+  .col-2-m {
+    width: 16.66667%;
+  }
+
+  .col-3-m {
+    width: 25%;
+  }
+
+  .col-4-m {
+    width: 33.33333%;
+  }
+
+  .col-5-m {
+    width: 41.66667%;
+  }
+
+  .col-6-m {
+    width: 50%;
+  }
+
+  .col-7-m {
+    width: 58.33333%;
+  }
+
+  .col-8-m {
+    width: 66.66667%;
+  }
+
+  .col-9-m {
+    width: 75%;
+  }
+
+  .col-10-m {
+    width: 83.33333%;
+  }
+
+  .col-11-m {
+    width: 91.66667%;
+  }
+
+  .col-12-m {
+    width: 100%;
+  }
+
+  .col-1-2-m {
+    width: 50%;
+  }
+
+  .col-1-3-m {
+    width: 33.33333%;
+  }
+
+  .col-2-3-m {
+    width: 66.66667%;
+  }
+
+  .col-1-4-m {
+    width: 25%;
+  }
+
+  .col-3-4-m {
+    width: 75%;
+  }
+
+  .col-1-5-m {
+    width: 20%;
+  }
+
+  .col-2-5-m {
+    width: 40%;
+  }
+
+  .col-3-5-m {
+    width: 60%;
+  }
+
+  .col-4-5-m {
+    width: 80%;
+  }
+
+  .col-full-m {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  .col-1-l,
+  .col-2-l,
+  .col-3-l,
+  .col-4-l,
+  .col-5-l,
+  .col-6-l,
+  .col-7-l,
+  .col-8-l,
+  .col-9-l,
+  .col-10-l,
+  .col-11-l,
+  .col-12-l,
+  .col-1-2-l,
+  .col-1-3-l,
+  .col-2-3-l,
+  .col-1-4-l,
+  .col-3-4-l,
+  .col-1-5-l,
+  .col-2-5-l,
+  .col-3-5-l,
+  .col-4-5-l {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+  }
+
+  .col-1-l {
+    width: 8.33333%;
+  }
+
+  .col-2-l {
+    width: 16.66667%;
+  }
+
+  .col-3-l {
+    width: 25%;
+  }
+
+  .col-4-l {
+    width: 33.33333%;
+  }
+
+  .col-5-l {
+    width: 41.66667%;
+  }
+
+  .col-6-l {
+    width: 50%;
+  }
+
+  .col-7-l {
+    width: 58.33333%;
+  }
+
+  .col-8-l {
+    width: 66.66667%;
+  }
+
+  .col-9-l {
+    width: 75%;
+  }
+
+  .col-10-l {
+    width: 83.33333%;
+  }
+
+  .col-11-l {
+    width: 91.66667%;
+  }
+
+  .col-12-l {
+    width: 100%;
+  }
+
+  .col-1-2-l {
+    width: 50%;
+  }
+
+  .col-1-3-l {
+    width: 33.33333%;
+  }
+
+  .col-2-3-l {
+    width: 66.66667%;
+  }
+
+  .col-1-4-l {
+    width: 25%;
+  }
+
+  .col-3-4-l {
+    width: 75%;
+  }
+
+  .col-1-5-l {
+    width: 20%;
+  }
+
+  .col-2-5-l {
+    width: 40%;
+  }
+
+  .col-3-5-l {
+    width: 60%;
+  }
+
+  .col-4-5-l {
+    width: 80%;
+  }
+
+  .col-full-l {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1460px) {
+  .col-1-xl,
+  .col-2-xl,
+  .col-3-xl,
+  .col-4-xl,
+  .col-5-xl,
+  .col-6-xl,
+  .col-7-xl,
+  .col-8-xl,
+  .col-9-xl,
+  .col-10-xl,
+  .col-11-xl,
+  .col-12-xl,
+  .col-1-2-xl,
+  .col-1-3-xl,
+  .col-2-3-xl,
+  .col-1-4-xl,
+  .col-3-4-xl,
+  .col-1-5-xl,
+  .col-2-5-xl,
+  .col-3-5-xl,
+  .col-4-5-xl {
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    float: left;
+  }
+}
+/* ------------------------------------------
+---------- Header styling-------------
+------------------------------------------ */
+#header {
+  background: #1d1d1d;
+  overflow: hidden;
+  min-height: 52px;
+}
+#header .header-logo {
+  color: #f3f3f3;
+  float: left;
+  text-transform: uppercase;
+  font-size: 0;
+  font-size: 0;
+}
+@media only screen and (min-width: 750px) {
+  #header .header-logo {
+    font-size: 2rem;
+    font-size: 1.8rem;
+    padding: 17px 0 12px 6px;
+  }
+}
+
+/* ------------------------------------------
+---------- Header & mobile menu styling------
+------------------------------------------ */
+#menu {
+  visibility: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: opacity 300ms ease, max-height 300ms ease, width 300ms ease;
+  position: fixed;
+  width: 0;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+@media only screen and (min-width: 1220px) {
+  #menu {
+    visibility: visible;
+    max-height: 100px;
+    opacity: 1;
+    width: auto;
+    bottom: initial;
+    top: initial;
+    left: initial;
+    right: initial;
+    float: right;
+    position: relative;
+  }
+}
+#menu ul {
+  padding: 0 15px 0 0;
+  margin: 0;
+  float: right;
+  transition: all 1s ease;
+}
+#menu ul li {
+  display: inline-block;
+}
+#menu ul li.first {
+  display: none;
+}
+#menu ul li a {
+  transition: 200ms color ease-in;
+  padding: 19px 14px;
+  display: block;
+  color: #988468;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  font-size: 1.9rem;
+}
+@media only screen and (min-width: 750px) {
+  #menu ul li a {
+    font-size: 1.9rem;
+    font-size: 1.3rem;
+  }
+}
+#menu ul li a:hover {
+  color: white;
+  transition: 200ms color ease-in;
+}
+#menu ul li.last a {
+  padding-right: 0;
+}
+#menu.open {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  visibility: visible;
+  max-height: 100vh;
+  width: 100%;
+  opacity: 1;
+  transition: opacity 300ms ease, max-height 300ms ease, width 300ms ease;
+}
+#menu.open ul {
+  float: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transition: all 1s ease;
+  transform: translateY(-50%);
+  padding: 0;
+}
+#menu.open ul li {
+  display: block;
+}
+#menu.open ul li.first {
+  display: block;
+}
+#menu.close {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  visibility: visible;
+  max-height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 300ms ease, max-height 300ms ease, width 300ms ease;
+}
+#menu.close ul {
+  float: none;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transition: all 1s ease;
+  transform: translateY(-50%);
+  padding: 0;
+}
+#menu.close ul li {
+  display: block;
+}
+#menu.close ul li.first {
+  display: block;
+}
+
+/* ------------------------------------------
+---------- Banner styling -------------------
+------------------------------------------ */
+#banner {
+  width: 100%;
+  padding-bottom: 80px;
+  position: relative;
+}
+@media only screen and (min-width: 750px) {
+  #banner {
+    padding-bottom: 30px;
+  }
+}
+@media only screen and (min-width: 1220px) {
+  #banner {
+    position: fixed;
+    height: 600px;
+    max-height: 95vh;
+    top: 50px;
+  }
+}
+#banner .title-side {
+  float: left;
+  position: static;
+  z-index: 2;
+}
+@media only screen and (min-width: 750px) {
+  #banner .title-side {
+    float: right;
+    position: relative;
+    z-index: 0;
+  }
+}
+#banner .image-side {
+  float: right;
+  position: static;
+}
+@media only screen and (min-width: 750px) {
+  #banner .image-side {
+    float: left;
+    position: relative;
+  }
+}
+#banner .image-side img {
+  max-width: 80%;
+  margin: -50px 10% 0 10%;
+}
+@media only screen and (min-width: 750px) {
+  #banner .image-side img {
+    max-width: 520px;
+    float: right;
+    padding-top: 30px;
+    margin: inherit;
+    margin: 0 -10px 0 0;
+  }
+}
+#banner .inner-title {
+  margin: 0;
+  padding-top: 25px;
+}
+@media only screen and (min-width: 1220px) {
+  #banner .inner-title {
+    padding-left: 65px;
+    padding-top: 170px;
+  }
+}
+#banner .inner-title hr {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  #banner .inner-title hr {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    float: left;
+    background: #88969b;
+    display: block;
+  }
+}
+#banner .inner-title h2 {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  #banner .inner-title h2 {
+    margin: 0;
+    max-width: 260px;
+    font-size: 2.6rem;
+    line-height: 32px;
+    display: block;
+  }
+}
+#banner .inner-title .product {
+  position: absolute;
+  bottom: 25px;
+  left: calc(10% + 15px);
+  right: calc(10% + 15px);
+  margin: auto;
+}
+@media only screen and (min-width: 750px) {
+  #banner .inner-title .product {
+    bottom: 0px;
+    right: auto;
+    left: auto;
+  }
+}
+
+/* ------------------------------------------
+---------- Banner and footer logo styling ---
+------------------------------------------ */
+.header-title,
+.footer-title {
+  text-align: left;
+  margin: 0;
+  position: relative;
+}
+.header-title .h1-start,
+.footer-title .h1-start {
+  color: white;
+  font-size: 2.5rem;
+  display: block;
+  line-height: 31px;
+}
+@media only screen and (min-width: 750px) {
+  .header-title .h1-start,
+  .footer-title .h1-start {
+    font-size: 5.2rem;
+    line-height: 64px;
+  }
+}
+.header-title .h1-end,
+.footer-title .h1-end {
+  color: white;
+  font-size: 3.7rem;
+  clear: both;
+  display: block;
+  text-transform: uppercase;
+  line-height: 34px;
+}
+@media only screen and (min-width: 750px) {
+  .header-title .h1-end,
+  .footer-title .h1-end {
+    font-size: 7.6rem;
+    line-height: 70px;
+  }
+}
+
+/* ------------------------------------------
+---------- Product number and description ---
+------------------------------------------ */
+.product {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  display: block;
+  text-align: center;
+}
+@media only screen and (min-width: 750px) {
+  .product {
+    text-align: left;
+  }
+}
+.product .slash {
+  font-size: 2.0rem;
+  padding: 0 10px;
+}
+.product .leftside {
+  display: inline-block;
+}
+@media only screen and (min-width: 750px) {
+  .product .leftside {
+    display: block;
+    float: left;
+  }
+}
+.product .rightside {
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (min-width: 750px) {
+  .product .rightside {
+    display: block;
+    text-align: left;
+    padding-left: 0px;
+    float: left;
+    margin-top: 5px;
+  }
+}
+
+/* ------------------------------------------
+---------- Hamburger styling description ---
+------------------------------------------ */
+.hamburger {
+  margin: 6px 0 0;
+  position: relative;
+  float: right;
+  z-index: 1;
+  display: block;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  z-index: 2;
+}
+@media only screen and (min-width: 1220px) {
+  .hamburger {
+    display: none;
+  }
+}
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  background-color: white;
+}
+.hamburger span {
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.hamburger.open span {
+  background-color: transparent;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.hamburger span:before {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+.hamburger.open span:before {
+  margin-top: 9px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+.hamburger span:after {
+  -webkit-transition-property: margin, -webkit-transform;
+  transition-property: margin, transform;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+  transition-delay: 0.2s, 0s;
+}
+.hamburger.open span:after {
+  margin-top: 9px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition-delay: 0s, 0.2s;
+  transition-delay: 0s, 0.2s;
+}
+.hamburger span {
+  margin: 0 auto;
+  position: relative;
+  top: 9px;
+  width: 25px;
+  height: 3px;
+  background-color: #988468;
+  display: block;
+}
+.hamburger span:after, .hamburger span:before {
+  position: absolute;
+  content: '';
+}
+.hamburger span:after {
+  width: 25px;
+  height: 3px;
+  background-color: #988468;
+  display: block;
+}
+.hamburger span:before {
+  width: 25px;
+  height: 3px;
+  background-color: #988468;
+  display: block;
+  margin-top: 18px;
+}
+.hamburger span:after {
+  margin-top: 9px;
+}
+
+/* ------------------------------------------
+---------- Footer styling-------------
+------------------------------------------ */
+#footer {
+  background: #1b1b1b;
+  min-height: 308px;
+  padding-top: 98px;
+  padding-bottom: 50px;
+}
+#footer .footer-title {
+  padding-bottom: 67px;
+  font-size: 3.0rem;
+}
+#footer .footer-title .h1-start {
+  font-size: 2.5rem;
+  line-height: 31px;
+}
+#footer .footer-title .h1-end {
+  font-size: 3.7rem;
+  line-height: 35px;
+}
+#footer .contact-link {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 12px;
+  color: #988468;
+  display: block;
+  margin-bottom: 48px;
+}
+#footer .copyright {
+  color: #b1b1b1;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+#footer a.privacy,
+#footer a.terms {
+  font-size: 0.9rem;
+  color: #666666;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#footer .dash {
+  color: #666666;
+  padding: 0 10px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #96a0a9;
+  color: #1a1a1a;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  display: block;
+  border-width: 1px;
+  width: 78px;
+  background: #988468;
+  opacity: 0.4;
+}
+
+.clear {
+  clear: both;
+}
+
+.lighttext {
+  color: #fff;
+}
+
+.darktext {
+  color: #1a1a1a;
+}
+
+.goldtext {
+  color: #988468;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.center-element {
+  margin: auto;
+  display: block;
+  float: none;
+}
+
+a {
+  color: #988468;
+}
+
+.container-full {
+  max-width: 1480px;
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -1350px;
+  opacity: 0.8;
+}
+
+/* ------------------------------------------
+---------- Buttons --------------------------
+------------------------------------------ */
+a.button {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 9px;
+  clear: both;
+  display: inline-block;
+  border: solid 1px #988468;
+  padding: 13px;
+  color: #988468;
+  transition: background 300ms ease;
+}
+a.button span {
+  padding-left: 20px;
+  padding-right: 7px;
+  font-size: 1.5rem;
+}
+a.button:hover {
+  background: #988468;
+  color: #fff;
+  transition: background 300ms ease;
+}
+
+/* ------------------------------------------
+---------- Top main page styling-------------
+------------------------------------------ */
+#top-section {
+  padding-top: 100px;
+  padding-bottom: 200px;
+}
+#top-section article {
+  display: block;
+  text-align: center;
+}
+#top-section h2 {
+  font-size: 34px;
+  margin: 0 0 25px;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+@media only screen and (min-width: 1220px) {
+  #top-section h2 {
+    line-height: 46px;
+    font-size: 4.8rem;
+  }
+}
+#top-section hr {
+  margin-bottom: 25px;
+}
+#top-section .big-description {
+  font-size: 2.4rem;
+  margin-top: 17px;
+  line-height: 36px;
+  max-width: 829px;
+  color: #666666;
+}
+@media only screen and (min-width: 1220px) {
+  #top-section .big-description {
+    font-size: 2.6rem;
+    line-height: 38px;
+  }
+}
+#top-section .top-image {
+  margin-top: 150px;
+}
+@media only screen and (min-width: 1220px) {
+  #top-section .top-image {
+    max-width: 500px;
+  }
+}
+#top-section .product {
+  margin: 20px auto 0 auto;
+  display: inline-block;
+  max-width: 360px;
+}
+
+/* ------------------------------------------
+---------- Main page styling-------------
+------------------------------------------ */
+#main {
+  background: #f3f3f3;
+  position: relative;
+}
+@media only screen and (min-width: 1220px) {
+  #main {
+    top: 710px;
+  }
+}
+
+/* ------------------------------------------
+---------- Bottom page styling -------------
+------------------------------------------ */
+#bottom-section .main-events-header {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 12px;
+  margin-bottom: 30px;
+  color: #988468;
+}
+#bottom-section hr {
+  margin-bottom: 90px;
+}
+
+.events-grid article {
+  margin-bottom: 30px;
+}
+.events-grid .post-date {
+  font-size: 3.4rem;
+  color: #cecece;
+  text-transform: uppercase;
+  margin: 0;
+}
+.events-grid .post-date span {
+  padding-right: 10px;
+  color: #988468;
+  position: relative;
+}
+.events-grid .post-date span sup {
+  font-size: 1.1rem;
+  margin-top: -2px;
+  vertical-align: text-top;
+}
+.events-grid .post-date .slash {
+  font-size: 4.1rem;
+  vertical-align: text-bottom;
+}
+.events-grid h3 {
+  font-size: 3.1rem;
+  margin: 0;
+  line-height: 31px;
+}
+.events-grid p.description {
+  font-size: 1.6rem;
+  color: #666666;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

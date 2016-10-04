@@ -1,0 +1,52 @@
+/* ------------------------------------------
+---------- Footer styling-------------
+------------------------------------------ */
+#footer {
+  background: $footerBg;
+  min-height: 308px;
+  padding-top: 98px;
+  padding-bottom: 50px;
+  .footer-title {
+    padding-bottom: 67px;
+    font-size: 3.0rem;
+    .h1-start {
+      font-size: 2.5rem;
+      line-height: 31px;
+    }
+    .h1-end {
+      font-size: 3.7rem;
+      line-height: 35px;
+    }
+  }
+  .contact-link {
+    text-transform: uppercase;
+    @extend .pal-roman;
+    font-size: 1.3rem;
+    line-height: 12px;
+    color: $gold;
+    display: block;
+    margin-bottom: 48px;
+  }
+  .copyright {
+    @extend .av-book;
+    color: #b1b1b1 ;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+
+  a.privacy,
+  a.terms{
+    @extend .av-book;
+    font-size: 0.9rem;
+    color: #666666;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .dash {
+    color: #666666;
+    padding: 0 10px;
+
+  }
+}

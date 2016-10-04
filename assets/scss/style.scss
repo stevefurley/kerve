@@ -1,0 +1,233 @@
+@import "../fonts/MyFontsWebfontsKit.css";
+@import "fonts.scss";
+@import "grid.scss";
+@import "colours.scss";
+@import "header.scss";
+@import "footer.scss";
+
+html {
+  font-size: 62.5%;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+html,
+body{
+  margin:0;
+  padding:0;
+}
+
+body {
+  background: $heroGrey;
+  color: $darktext;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  display: block;
+  border-width: 1px;
+  width: 78px;
+  background: #988468;
+  opacity: 0.4;
+}
+
+.clear {
+  clear: both;
+}
+
+.lighttext {
+  color: $lighttext;
+}
+.darktext {
+  color: $darktext;
+}
+.goldtext {
+  color: $gold;
+}
+
+.center-text {
+  text-align: center;
+}
+.center-element {
+  margin: auto;
+  display: block;
+  float: none;
+}
+
+a {
+  color: $gold;
+}
+
+.container-full {
+  max-width: 1480px;
+}
+
+//overlay for image checking currently disabled in html
+.overlay {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -1350px;
+  opacity: 0.8;
+}
+
+/* ------------------------------------------
+---------- Buttons --------------------------
+------------------------------------------ */
+a.button {
+  text-transform: uppercase;
+  @extend .av-med;
+  font-size: 1.3rem;
+  line-height: 9px;
+  clear: both;
+  display: inline-block;
+  border: solid 1px $gold;
+  padding: 13px;
+  color: $gold;
+  transition: background 300ms ease;
+  span {
+    padding-left: 20px;
+    padding-right: 7px;
+    @extend .av-heavy;
+    font-size: 1.5rem;
+  }
+  &:hover {
+    background: $gold;
+    color: #fff;
+    transition: background 300ms ease;
+  }
+}
+
+/* ------------------------------------------
+---------- Top main page styling-------------
+------------------------------------------ */
+
+#top-section {
+  padding-top: 100px;
+  padding-bottom: 200px;
+  article {
+    display: block;
+    text-align: center;
+  }
+  h2 {
+    font-size: 34px;
+    margin: 0 0 25px;
+    text-transform: uppercase;
+    line-height: 32px;
+    @extend .pal-roman;
+    @include breakpoint(l) {
+      line-height: 46px;
+      font-size: 4.8rem;
+    }
+  }
+  hr {
+    margin-bottom: 25px;
+  }
+  .big-description {
+    font-size: 2.4rem;
+    margin-top: 17px;
+    line-height: 36px;
+    max-width: 829px;
+    @extend .pal-roman;
+    color: #666666;
+    @include breakpoint(l) {
+      font-size: 2.6rem;
+      line-height: 38px;
+    }
+  }
+  .top-image {
+
+    margin-top: 150px;
+    @include breakpoint(l) {
+      max-width: 500px;
+    }
+  }
+  .product {
+    margin: 20px auto 0 auto;
+    display: inline-block;
+    max-width: 360px;
+  }
+}
+
+/* ------------------------------------------
+---------- Main page styling-------------
+------------------------------------------ */
+
+#main {
+  background: $lightWhite;
+
+  position: relative;
+  @include breakpoint(l) {
+    top: 710px;
+  }
+}
+
+/* ------------------------------------------
+---------- Bottom page styling -------------
+------------------------------------------ */
+#bottom-section {
+  .main-events-header {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 12px;
+    margin-bottom: 30px;
+    color: $gold;
+    @extend .av-med;
+  }
+  hr {
+    margin-bottom: 90px;
+  }
+}
+.events-grid {
+  article {
+    margin-bottom: 30px;
+  }
+  .post-date {
+    font-size: 3.4rem;
+    @extend .pal-roman;
+    color: #cecece;
+    text-transform: uppercase;
+    margin: 0;
+    span {
+      padding-right: 10px;
+      color: $gold;
+      position: relative;
+      sup {
+        font-size: 1.1rem;
+        margin-top: -2px;
+        vertical-align: text-top;
+      }
+    }
+    .slash {
+      @extend .swiss;
+      font-size: 4.1rem;
+      vertical-align: text-bottom;
+    }
+  }
+  h3 {
+    font-size: 3.1rem;
+    @extend .pal-light;
+    margin: 0;
+    line-height: 31px;
+  }
+
+  p.description {
+    font-size: 1.6rem;
+    @extend .av-book;
+    color: #666666;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+}

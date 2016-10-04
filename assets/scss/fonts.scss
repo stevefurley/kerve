@@ -1,0 +1,49 @@
+/* ------------------------------------------
+---------- Fonts and the most basic styling--
+------------------------------------------ */
+.swiss {
+	font-family: Swiss721BT-Thin;
+	font-weight: normal;
+	font-style: normal;
+}
+.pal-light {
+	font-family: PalatinoLT-Light;
+	font-weight: normal;
+	font-style: normal;
+}
+.pal-roman {
+	font-family: PalatinoLT-Roman;
+	font-weight: normal;
+	font-style: normal;
+}
+.av-heavy {
+	font-family: AvenirLTStd-Heavy;
+	font-weight: normal;
+	font-style: normal;
+}
+.av-med {
+	font-family: AvenirLTStd-Medium;
+	font-weight: normal;
+	font-style: normal;
+}
+.av-book {
+	font-family: AvenirLTStd-Book;
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+h1,
+h2,
+h3,
+h4{
+	@extend .pal-light;
+}
+
+h2 {
+	font-size: 2.7rem;
+}
+
+p {
+	@extend .pal-roman;
+}
