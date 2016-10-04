@@ -112,10 +112,12 @@
     }
   });
 
-  var $chairHeight = 0;
+
   $( window ).resize(function() {
     if ($(window).width() >= 750) {
       matchHeight.init();
+    } else {
+      $('.title-side, .image-side').css('min-height', 'auto');
     }
   });
 
